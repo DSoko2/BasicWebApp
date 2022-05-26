@@ -12,7 +12,7 @@ public class QueryProcessor {
             return "Tests are the thing you wanna run to know at least something works.";
         }
         if (query.toLowerCase().contains("name")) {
-            return "My name is Daniel";
+            return "Daniel";
         }
         return "";
     }
