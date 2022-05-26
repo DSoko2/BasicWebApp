@@ -26,8 +26,8 @@ public class QueryProcessorTest {
     }
 
     @Test
-    public void knowsWhatIsYourName() throws Exception {
-        assertThat(queryProcessor.process("What is you name"), containsString("Daniel"));
+    public void knowsWhatIsPlus() throws Exception {
+        assertThat(queryProcessor.process("What is 20 plus 2019"), containsString("2039"));
     }
 
     @Test
