@@ -14,7 +14,7 @@ public class QueryProcessor {
 
     public String process(String query) {
         String noWhitespace = query.toLowerCase().replaceAll("\\s+","");
-        String[] plusExploded = noWhitespace.split("plus");
+        String[] plusExploded = noWhitespace.split(":")[1].split("plus");
         if (plusExploded.length > 1) {
             return Arrays.stream(plusExploded).map(this::toNumber).reduce(this::add).orElse(0).toString();
         }

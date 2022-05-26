@@ -27,7 +27,7 @@ public class QueryProcessorTest {
 
     @Test
     public void knowsWhatIsPlus() throws Exception {
-        assertThat(queryProcessor.process("What is 20 plus 2019"), is("2039"));
+        assertThat(queryProcessor.process("f1a3f650:What is 20 plus 2019"), is("2039"));
     }
 
     @Test
